@@ -50,6 +50,9 @@ Please select a csv file bigger than 5 MB from here: https://www.stats.govt.nz/l
 4. Add Tasklet to move csv file after importing, into another folder
 5*. (optional) Create another Job to read data from two DB Tables, and write to flat csv file.
 
+spring batch csv file to DB [XML CONFIG]
+spring batch DB to csv file [ANNOTATIONS CONFIG]
+
 Evaluation: Code review
 
 Resources:
