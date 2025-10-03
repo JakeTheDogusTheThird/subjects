@@ -1,0 +1,71 @@
+JavaScript
+Duration: 2 days
+
+Goal: To be able to 
+
+Tasks:
+
+Arrays
+
+           Task 1: Write a function that takes an array of numbers, for example [1,2,3,4,5] and returns the arithmetic mean, (round the result to tenths), try several ways to do.
+            
+           Task 2: Write a function that takes an array of numbers, for example [1,2,3,4,5], and moves the first element of the array to the end, try several ways to do.
+
+           Task 3: Write a function that receives an array of employees, each employee has a name and an age ([{​​name: "John", age: 23}​​​​​​​​​,...]) and returns an array, where each element is the string "Name: John, age: 23 years.
+
+Objects
+           Task 1: We have an object that stores our team's salaries:
+            let salaries = {
+              John: 100,
+              Ann : 160,
+              Pete: 130
+            }
+Write code to sum up all salaries and store the result in the sum variable. If the salaries object is empty, then the result should be 0.
+
+        Task 2: Create a multiplyNumeric(obj) function that multiplies all the numeric properties of obj by 2.
+Examples: 
+before the function call
+  let menu = {
+    width: 200,
+    height: 300,
+   title: "My menu"
+  }
+
+after the function call
+let menu = {
+    width: 400,
+    height: 600,
+   title: "My menu"
+  }
+
+Note that multiplyNumeric doesn't need to return anything. You should directly modify the object.
+
+        Task 3: 
+Write an object ladder, that object allows you to go up and down.
+  ladder.showStep();
+  ladder.up();
+  ladder.up();
+  ladder.showStep();
+  ladder.down();
+  ladder.showStep();
+
+The ladder we are on is displayed.
+
+OOP
+          Task1: Implement the Worker class, which will have the following properties: name (first name), surname (surname), rate (rate per day of work), days (number of days worked). The class must also have a getSalary() method that will display the employee's salary. The salary is the product (multiplication) of the rate rate by the number of days worked days. And the getFullName() method is the first and last name of the worker. Write a new Boss class, this class inherits from the Worker class and the previous job. A new property appears: workers - the number of workers. And the salary is calculated differently: the product (multiplication) of the rate by the number of days worked and the number of employees.
+Regular Expressions
+          Task 1: Check the URL for validity. We pass the url to the function and check whether it is valid or not (return true or false).
+Criteria: The URL must start with http:// or https:// and end with .php or .html. For example - http://site.ru/index.php - valid, http://site.com - not valid, site.it/index.php  - not valid
+
+          Task 2: Check the phone number for validity. 
+We pass the phone to the function and check whether it is valid or not (return true or false). 
+Such numbers must be valid: 39991112233, 3 (999) 1112233, +4 (999) 111-22-33, +4 (999) 111 22 33. 
+the phone can start with either +4 or 3. operator code, it can be in brackets and without, and with spaces. 
+The rest can be with hyphens and spaces.
+
+          (NEW) Task 3: Anonymize credit card numbers in string.
+The credit card numbers are 16 digits long. 
+Your task is to replace the first 12 digits a credit card number with asterisks (*) and leave the last 4 digits as they are.
+We pass a string to the function and return the modified string according to this task. F
+or example, for input: "My credit card is 1111222233334444. 
+Please keep it safe." we expect the output: "My credit card is ************4444. Please keep it safe."
