@@ -1,0 +1,81 @@
+DOM
+ Task 1: Implement calculator. 
+We display 10 buttons of numbers from 0 to 9. Buttons: multiply, divide, add, subtract, calculate. When you press the buttons in any order, the line (5-4 + 3 * 2 ...) is displayed in a separate block and when you click on the calculate button, we replace this line in the block with the result of its calculation, while you can then continue to calculate with this already calculation. 
+Use the stack to evaluate arithmetic expressions. 
+The program will be tested with compound expressions with multiple operators and parentheses. For simplicity assume that the operands are integers, and the operators are of four types: +, -, *, /. 
+Catch all the errors that you can find. 
+
+Task 2: You need to develop an application using classes to display a table of data.
+Features:
+Sorting by columns: when you click on the column name, the rows of the table are sorted in ascending order, when you click again - in descending order.
+A graphic element or a text message indicates the sort direction.
+Client-side pagination: data must be displayed page by page, with a maximum of 50 items per page. 
+You need to provide custom navigation to navigate through pages.
+Filtering: the component provides a text field in which the user can enter text and table rows whose data does not contain the substring entered by the user are hidden. 
+Re-filtering is carried out by clicking on the "Find" button.
+By clicking on a row in the table, the field values are displayed in an additional block below the table.
+The data in the table is loaded from the server. Download method from the server of your choice.
+Above the table there is an add button, when clicked, the form for adding a row appears 
++------+------------+-----------------+-----------------+---------------+ 
+| id | firstName | lastName | email | phone | 
++------+------------+-----------------+-----------------+---------------+ 
+|input | input | input | input | input |
++------+------------+-----------------+-----------------+---------------+
+After filling in all the inputs, the Add to table button is activated, which inserts the filled row at the beginning of the table.
+To demonstrate how the component works, you need to make a simple HTML page. 
+The user is prompted to select a data set: small or large.
+When you select a data set, it is loaded from the server and a table is built according to the data.
+
+Server Data Format
+
+The server returns a JSON array of data. Sample data:
+
+[
+ {
+  id: 101,
+  firstName: 'Sue',
+  lastName: 'Corson',
+  email: 'DWhalley@in.gov'.
+  phone: '(612)211-6296',
+  address: {
+    streetAddress: '9792 Mattis Ct',
+    city: 'Waukesha',
+    state: 'WI',
+    zip: '22178'
+  },
+  description: 'et lacus magna dolor...',
+ }
+]
+Remarks:
+ 
+Particular attention should be paid to the speed of work. Hanging the interface when performing data loading, filtering, sorting operations is unacceptable.
+ 
+Using third-party libraries will be a plus only if it is justified and you can explain the reason for the choice.
+ 
+Write the code the way you would write it at work - the internals of the task will be evaluated even more carefully than the external compliance with the task. The code must be organized so that it can be reused.
+ 
+Remember error handling!
+The layout may be the simplest. Visualization and decoration do to your taste.
+Data Visualization Scheme
+
++------+------------+-----------------+-----------------+---------------+ 
+| id  | firstName | lastName | email           | phone         | 
++------+------------+-----------------+-----------------+---------------+ 
+| 101 | Sue       | Corson   | DWhalley@in.gov | (612)211-6296 |
++------+------------+-----------------+-----------------+---------------+
+| 102 | Lor       | Ipsumd   | dwhalley@in.gov | (612)211-6296 |
++------+------------+-----------------+-----------------+---------------+
+| 103 | Ips       | Umdolo   | dWhalley@in.gov | (612)211-6296 |
++------+------------+-----------------+-----------------+---------------+
+If selected by a user with id = 101, then below the table we display the following information:
+
+User selected <b>Sue Corson</b>
+Description:
+<textarea>
+et lacus magna dolor...
+</textarea>
+Residential address: <9792 Mattis Ct</b>
+City: <b>Waukesha</b>
+Province/state: <b>WI</b>
+Index: <b>22178</b>
+Task 3: Solve the exercises proposed in this resource: https://github.com/Asabeneh/30-Days-Of-JavaScript/tree/master
